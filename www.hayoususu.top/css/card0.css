@@ -1,0 +1,81 @@
+/* Card 0 */
+#tile {
+	margin: 30px;
+	margin-top: 80px;
+	vertical-align: middle;
+	text-align: center;
+	padding-top: 50px;
+}
+
+#FCName {
+	font-family: "Minecraft", "黑体", "Heiti SC Light", "Heiti SC";
+	font-size: 80px;
+	letter-spacing: 3px;
+}
+
+#FCinfo {
+	padding: 10px;
+	padding-top: 30px;
+	font-size:18px;
+	color: #BBBBBB;
+}
+
+@media screen and (min-width: 900px) { 
+	#FCName {
+		font-size: 90px;
+	}
+	#FCinfo {
+		font-size: 22px;
+	}
+}
+
+@media screen and (max-width: 600px) { 
+	#FCName {
+		font-size: 60px;
+	}
+	#FCinfo {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 400px) { 
+	#FCName {
+		font-size: 50px;
+	}
+	#FCinfo {
+		font-size: 15px;
+	}
+}
+
+#joinUs {
+	margin: 80px;
+	margin-top: 100px;
+}
+
+#joinDiv {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 190px;
+}
+
+#joinButtun {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 32px;
+	color: #F7F7F7;
+	padding: 15px;
+	border: 1px solid;
+	border-radius: 50px;
+	-moz-border-radius: 50px; /* Old Firefox */
+	transition: color 0.8s, background-color 1s;
+	-moz-transition: color 0.8s, background-color 1s;	/* Firefox 4 */
+	-webkit-transition: color 0.8s, background-color 1s;	/* Safari 和 Chrome */
+	-o-transition: color 0.8s, background-color 1s;	/* Opera */
+}
+
+#joinButtun:hover {
+	color: #363636;
+	background-color: #F0F0F0;
+}

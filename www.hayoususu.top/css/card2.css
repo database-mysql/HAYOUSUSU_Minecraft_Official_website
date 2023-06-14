@@ -1,0 +1,22 @@
+/* Card 2 */
+
+#c2_div {
+	margin: 50px;
+	padding: 30px;
+}
+
+#c2_info {
+	width: 70%;
+	font-size: 30px;
+}
+
+@media screen and (max-width: 600px) { 
+	#c2_div {
+		margin: 20px;
+		padding: 10px;
+	} 
+	#c2_info {
+		width: 80%;
+		font-size: 25px;
+	}
+} 

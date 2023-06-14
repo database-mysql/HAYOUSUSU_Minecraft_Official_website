@@ -1,0 +1,39 @@
+/* Card 2 */
+
+#c3_div {
+	margin: 30px;
+	padding: 10px;
+	color: #21222A;
+	text-align: center;
+}
+
+#c3_tile {
+	margin-top: 30px;
+	font-size: 50px;
+}
+
+#serverIP {
+	margin: 20px;
+	margin-top: 50px;
+	font-size: 30px;
+}
+
+#serverPort {
+	margin: 20px;
+	font-size: 30px;
+}
+
+#QQ {
+	margin: 10px;
+	font-size: 15px;
+}
+
+@media screen and (max-width: 600px) { 
+	#c2_div {
+		margin: 20px;
+		padding: 10px;
+	} 
+	#c2_info {
+		font-size: 25px;
+	}
+} 

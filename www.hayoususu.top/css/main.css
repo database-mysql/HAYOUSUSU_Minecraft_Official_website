@@ -1,0 +1,333 @@
+@font-face {
+    /* font-properties */
+    font-family: Minecraft;
+    src: url('fonts/Minecraft.ttf'), ('fonts/Minecraft.eot'), ('fonts/Minecraft.svg');
+}
+
+.MCFont {
+	/* “新宋体” 是你可以替换的字体 */
+	font-family: "Minecraft", "新宋体 Light", "新宋体", "黑体", "Heiti SC Light", "Heiti SC"; 
+}
+
+::-webkit-scrollbar {  
+  width: 4px;
+  height: 14px; 
+}
+  
+::-webkit-scrollbar-track,  
+::-webkit-scrollbar-thumb {  
+  border-radius: 999px;
+}  
+  
+::-webkit-scrollbar-track {  
+  background: #111111;
+}
+
+::-webkit-scrollbar-thumb {  
+  min-height: 20px;
+  background-clip: content-box;
+  background-color: #454545;
+  transition: background-color 1s;
+  -webkit-transition: background-color 1s;
+}  
+
+::-webkit-scrollbar-thumb:hover {  
+  background-color: #727272;
+}  
+
+  
+::-webkit-scrollbar-corner {  
+  background: #111111;  
+}  
+
+
+body,td,th {
+	font-family: "微软雅黑 Light", "微软雅黑", "黑体", "Heiti SC Light", "Heiti SC";
+	font-size: 10px;
+	color: white;
+	background-color: #4F4F4F;
+}
+
+a {
+	text-decoration: none;
+	color: #EBB5B5;
+}
+
+#background {
+	width: 100%;
+	height: 500px;
+	background-image: url(../images/bk/bk0.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	
+	z-index: 0;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+}
+
+#bk1 {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/bk/bk1.jpg);
+	opacity: 0;
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	z-index: 10;
+}
+
+#bk2 {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/bk/bk2.jpg);
+	opacity: 0;
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	z-index: 10;
+}
+
+#body {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+}
+
+#nav {
+	position: absolute;
+	top: 36px;
+	left: 55px;
+	margin-left: 100px;
+	height: 30px;
+}
+
+#nav ul li {
+	list-style-type: none;
+	float: left;
+	width: 80px;
+	margin: 0 10px;
+	padding: 5px;
+	font-size: 20px;
+	border-radius:25px;
+	text-align: center;
+	-moz-border-radius:25px; /* Old Firefox */
+	transition: color 0.6s, background-color 0.5s;
+	-moz-transition: color 0.6s, background-color 0.5s;
+	-webkit-transition: color 0.6s, background-color 0.5s;
+	-o-transition: color 0.6s, background-color 0.5s;
+}
+
+#nav ul li:hover {
+	color: #474747;
+	background-color: white;
+}
+
+#nav a {
+	color: white;
+}
+
+#moreMenu {
+	background-color: #575757;
+	opacity: 0.7;
+	margin-top: 20px;
+	padding: 20px;
+}
+
+#moreMenu ul li {
+	list-style-type: none;
+	margin: 5px 10px;
+	padding: 3px;
+	font-size: 18px;
+	border-radius:25px;
+	background-color: #575757;
+	color: white;
+	-moz-border-radius:25px; /* Old Firefox */
+	transition: color 0.6s, background-color 0.5s;
+	-moz-transition: color 0.6s, background-color 0.5s;
+	-webkit-transition: color 0.6s, background-color 0.5s;
+	-o-transition: color 0.6s, background-color 0.5s;
+}
+
+#moreMenu ul li:hover {
+	color: #474747;
+	background-color: white;
+}
+
+#card0 {
+	height: 600px;
+}
+
+#card1 {
+	height: 500px;
+}
+
+#card2 {
+	height: 500px;
+}
+
+#card3 {
+	height: 350px;
+	background-color: #bbbbbb;
+	opacity: 0.8;
+}
+
+#card4 {
+	height: 800px;
+	background-color: white;
+	opacity: 0.8;
+}
+
+#toper {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	z-index: 100;
+}
+
+#logo {
+	position: absolute;
+	top: 20px;
+	left: 10px;
+	width: 120px;
+	height: 30px;
+	font-size: 26px;
+	vertical-align: middle;
+	text-align: center;
+	padding: 10px;
+	float: left;
+}
+
+@media screen and (max-width: 400px) {
+	#logo {
+		font-size: 22px;
+		padding: 8px;
+		width: 100px;
+	}
+	#nav ul li {
+		width: 80px;
+		margin: 0 5px;
+		padding: 2px;
+		font-size: 16px;
+	}
+	#nav_more {
+		display: block;
+	}
+}
+
+.light {
+	background-image: url(../images/light.png);
+	position: fixed;
+	width: 25px;
+	height: 25px;
+	background-repeat: no-repeat;
+	z-index: 5;
+	animation-name: light;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	-webkit-animation-name: light;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-name: light;
+	-moz-animation-direction: alternate;
+	-moz-animation-iteration-count: infinite;
+	-o-animation-name: light;
+	-o-animation-direction: alternate;
+	-o-animation-iteration-count: infinite;
+}
+
+.light_big {
+	width: 50px;
+	height: 50px;
+	background-size: 100%;
+	-webkit-background-size: 100%;
+	-ms-background-size: 100%;
+	-o-background-size: 100%;
+}
+
+@keyframes light
+{
+from {opacity: 0;}
+to {opacity: 0.8;}
+}
+
+@-moz-keyframes light /* Firefox */
+{
+from {opacity: 0;}
+to {opacity: 0.8;}
+}
+
+@-webkit-keyframes light /* Safari 和 Chrome */
+{
+from {opacity: 0;}
+to {opacity: 0.8;}
+}
+
+@-o-keyframes light /* Opera */
+{
+from {opacity: 0;}
+to {opacity: 0.8;}
+}
+
+@media screen and (min-width: 1366px) {
+	#background {
+		background-size: cover;
+		-moz-background-size: cover;
+		-webkit-background-size: cover;
+		-o-background-size: cover;
+	}
+	#lights {
+		display: none;
+	}
+}
+
+@media screen and (min-height: 705px) {
+	#background {
+		background-size: cover;
+		-moz-background-size: cover;
+		-webkit-background-size: cover;
+		-o-background-size: cover;
+	}
+	#lights {
+		display: none;
+	}
+}
+
+#light1 {
+	animation-duration: 2s;
+	-moz-animation-duration: 2s;
+	-webkit-animation-duration: 2s;
+	-o-animation-duration: 2s;
+}
+
+#light2 {
+	animation-duration: 1.5s;
+	-moz-animation-duration: 1.5s;
+	-webkit-animation-duration: 1.5s;
+	-o-animation-duration: 1.5s;
+}
+
+#light3 {
+	animation-duration: 2.3s;
+	-moz-animation-duration: 2.3s;
+	-webkit-animation-duration: 2.3s;
+	-o-animation-duration: 2.3s;
+}
+
+#light4 {
+	animation-duration: 1.7s;
+	-moz-animation-duration: 1.7s;
+	-webkit-animation-duration: 1.7s;
+	-o-animation-duration: 1.7s;
+}
+
